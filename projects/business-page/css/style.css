@@ -1,0 +1,39 @@
+/* Color palette
+Black: #02111B (header, visit box background)
+Cream: #E0DDCF (“visit us” box)
+White: #FCFCFC (nav links)
+font-family: "Newsreader", serif;
+*/
+
+body {
+    font-family: "Newsreader", "DM Sans", sans-serif;
+    font-size: 14px;
+    color: #02111B;
+    margin: 0;
+}
+
+header {
+    background: #02111B;
+    color: #DF4601;
+    padding: 60px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 60px;
+}
+
+header a {
+    color: #FCFCFC;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.press-room {
+    background: #02111B;
+    color: #E0DDCF;
+    padding: 40px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
