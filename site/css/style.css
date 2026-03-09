@@ -1,0 +1,87 @@
+/* ===== BASE STYLES ===== */
+h1 {
+    color: #2a2626;
+    font-family: "Inria Serif", serif;
+    background-color: #f2e6e8;
+    font-size: 60px;
+}
+
+.header {
+    background: #f2e6e8;
+    text-align: center;
+    padding: 20px 0;
+}
+
+body {
+    font-family: "Inria Serif";
+    background-color: #fffdfa;
+    margin: 0;
+}
+
+
+nav {
+    font-family: "Red Hat Display", sans-serif;
+    color: #fffdfa;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #2a2626;
+}
+
+h2 {
+    font-family: "Inria Serif";
+}
+
+h3 {
+    font-family: "Inria Serif";
+}
+
+p {
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.contact {
+    background: #8e3e5a;
+    padding: 20px 0 60px 0;
+    font-size: 40px;
+    font-family: "Inria Serif";
+}
+
+.aboutme {
+    background: #fffdfa;
+}
+
+.thumbnail {
+    background: #fffdfa;
+    padding: 60px 0;
+}
+
+.articles {
+    background: #f2e6e8
+}
+
+
+.articles h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.articles h3 {
+    font-size: 30px;
+}
+
+.bi {
+    color: #2a2626;
+}
+
+.read a {
+    color: #2a2626;
+    padding: 0.7em;
+    background-color: #fffdfa;
+    color: #2a2626;
+    text-decoration: none;
+}
