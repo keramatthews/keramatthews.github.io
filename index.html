@@ -33,71 +33,87 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container text-center my-5">
-            <div class="row-align-items-start">
-                <h1>Kéra Matthews</h1>
-                <nav>
-                    <a href="#">Home</a> | <a href="/resume/">Resume</a> | <a href="/clips/">Clips</a> | <a
-                        href="/about/">About</a>
-                </nav>
-            </div>
+
+    <header class="header sticky-top">
+        <div class="container nav-container">
+            <h1 class="site-title">
+                <span class="name">Kéra Matthews</span> Portfolio
+            </h1>
+
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/resume/">Resume</a>
+                <a href="/clips/">Clips</a>
+                <a href="/about/">About</a>
+            </nav>
+        </div>
     </header>
     <main>
+        <section class="home-img">
+            <div class="container">
+                <img src="site/img/home.jpg" class="img-fluid home" alt="home image">
+            </div>
+        </section>
         <section class="aboutme">
             <div class="container py-5">
-                <div class="row align-items-start">
+                <div class="row align-items-center">
                     <div class="col-md-7">
-                        <div class="left-align">
-                            <h2>I'm a journalism student interested in feature writing, multimedia storytelling, and
-                                most of all:
-                                book
-                                publishing. My work combines reporting, videography, and narrative-focused editorial
-                                work.</h2>
-                        </div>
+                        <p class="intro-text">I'm a journalism and marketing student interested in feature writing,
+                            multimedia storytelling and most of all— book publishing. My work combines reporting,
+                            videography and narrative-focused editorial work.</p>
                     </div>
                     <div class="col-md-5">
-                        <img src="site/img/kk.jpg" class="img-fluid" alt="video thumbnail">
+                        <img src="site/img/kk.jpg" class="img-fluid" alt="Portrait of Kéra Matthews">
                     </div>
+                </div>
+            </div>
         </section>
         <section class="articles">
             <div class="container pt-0 pb-2">
 
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="articles-title">Latest Articles</h2>
+                        <h2 class="articles-title"><strong>Latest Articles</strong></h2>
                     </div>
                 </div>
 
                 <div class="row align-items-start">
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 article-card">
+                        <img src="../site/img/kwanzaa.jpg" class="img-fluid kwanzaa-img" alt="article thumbnail">
                         <h3>Nyumburu's 59th Annual Pre-Kwanzaa Celebration Highlights Black Heritage</h3>
                         <p>"The University of Maryland's Nyumburu Cultural Center, which funds The Black Explosion,
-                            hosted its annual Pre-Kwanzaa Celebration and Dinner on Dec. 3, reinforcing the holiday's
-                            themes of Black cultural pride and community."</p>
+                            hosted its annual Pre-Kwanzaa Celebration and Dinner on Dec. 3..."</p>
 
                         <div class="read">
-                            <a href="#"><strong>Read Article Here</strong></a>
+                            <a
+                                href="https://blackexplosionnews.com/2025/12/11/nyumburus-59th-annual-pre-kwanzaa-celebration-highlights-black-heritage/"><strong>Read
+                                    Article Here</strong></a>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 article-card">
+                        <img src="../site/img/cold.jpg" class="img-fluid cold-img" alt="article thumbnail">
                         <h3>The Cold-Weather Confidence Drop: How Students Experience Mood Shifts</h3>
                         <p>"Once November hits, the school campus air shifts..."</p>
 
                         <div class="read">
-                            <a href="#"><strong>Read Article Here</strong></a>
+                            <a
+                                href="https://www.hercampus.com/school/maryland/the-cold-weather-confidence-drop-how-students-experience-mood-shifts/"><strong>Read
+                                    Article Here</strong></a>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 article-card">
+                        <img src="../site/img/memorial.jpg" class="img-fluid memorial-img" alt="article thumbnail">
                         <h3>University of Maryland students learn the story of Lt. Richard Collins III through new film
                         </h3>
                         <p>"As the camera lingered on family photos..."</p>
 
                         <div class="read">
-                            <a href="#"><strong>Read Article Here</strong></a>
+                            <a
+                                href="https://blackexplosionnews.com/2025/10/24/university-of-maryland-students-learn-the-story-of-lt-richard-collins-iii-through-new-film/"><strong>Read
+                                    Article Here</strong></a>
                         </div>
                     </div>
 
@@ -116,8 +132,8 @@
                     </div>
 
                     <div class="col-md-5">
-                        <h2 class="video-title">Latest Video</h2>
-                        <h3>Lt. Collins' Annual Day of Service</h3>
+                        <h2 class="video-title"><strong>Latest Video</strong></h2>
+                        <h3 class="collins-title">Lt. Collins' Annual Day of Service</h3>
                         <p>
                             Click the thumbnail to watch the full video on Vimeo.
                         </p>
@@ -135,7 +151,7 @@
             <div class="links">
                 <a href="https://www.linkedin.com/in/k%C3%A9ra-matthews/"><i class="bi bi-linkedin"></i></a>
                 <a href="https://www.instagram.com/keramatthews.media/"><i class="bi bi-instagram"></i></a>
-                <a href="mailto:kera.a.matthews@gmail.com"><i class="bi bi-envelope"></i></a>
+                <a href="mailto:keralena@gmail.com"><i class="bi bi-envelope"></i></a>
             </div>
     </footer>
 </body>

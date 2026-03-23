@@ -1,87 +1,361 @@
-/* ===== BASE STYLES ===== */
-h1 {
-    color: #2a2626;
-    font-family: "Inria Serif", serif;
-    background-color: #f2e6e8;
-    font-size: 60px;
-}
-
-.header {
-    background: #f2e6e8;
-    text-align: center;
-    padding: 20px 0;
-}
-
 body {
-    font-family: "Inria Serif";
-    background-color: #fffdfa;
-    margin: 0;
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #fffdfa;
+  color: #2a2626;
 }
 
-
-nav {
-    font-family: "Red Hat Display", sans-serif;
-    color: #fffdfa;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 0 10px;
+p,
+li {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+  color: #2a2626;
 }
 
-nav a {
-    color: #2a2626;
+h2,
+h3 {
+  font-family: "Inria Serif", serif;
+  margin-bottom: 12px;
 }
 
 h2 {
-    font-family: "Inria Serif";
+  color: #8e3e5a;
 }
 
 h3 {
-    font-family: "Inria Serif";
+  color: #2a2626;
 }
 
-p {
-    font-family: "Red Hat Display", sans-serif;
+main .container {
+  max-width: 980px;
 }
 
-.contact {
-    background: #8e3e5a;
-    padding: 20px 0 60px 0;
-    font-size: 40px;
-    font-family: "Inria Serif";
+/* =========================
+   HEADER / NAV
+========================= */
+
+.header {
+  background: #8e3e5a;
+  padding: 10px 0;
 }
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-family: "Inria Serif", serif;
+  font-size: 26px;
+  color: #f2e6e8;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.nav-links a {
+  margin-left: 24px;
+  text-decoration: none;
+  font-family: "Red Hat Display", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #f2e6e8;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fffdfa;
+}
+
+.home-img,
+.resume-img,
+.clips-img,
+.about-me-img {
+  background-color: #f2e6e8;
+}
+
+
+.aboutme,
+.articles,
+.thumbnail,
+.recents,
+.publications,
+.about-section {
+  padding: 56px 0;
+}
+
+/* =========================
+   HOME PAGE
+========================= */
 
 .aboutme {
-    background: #fffdfa;
+  background: #fffdfa;
 }
 
-.thumbnail {
-    background: #fffdfa;
-    padding: 60px 0;
+.intro-text {
+  font-size: 30px;
+  text-align: left;
+  line-height: 1.45;
+}
+
+.aboutme img {
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
 
 .articles {
-    background: #f2e6e8
+  background: #f2e6e8;
 }
 
+.articles-title {
+  font-size: 42px;
+  margin-bottom: 24px;
+}
 
-.articles h2 {
-    font-size: 40px;
-    margin-bottom: 10px;
+.article-card {
+  margin-bottom: 20px;
 }
 
 .articles h3 {
-    font-size: 30px;
+  font-size: 28px;
+  line-height: 1.22;
 }
 
-.bi {
-    color: #2a2626;
+.kwanzaa-img,
+.cold-img,
+.memorial-img {
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  margin-bottom: 12px;
 }
 
 .read a {
-    color: #2a2626;
-    padding: 0.7em;
-    background-color: #fffdfa;
-    color: #2a2626;
-    text-decoration: none;
+  display: inline-block;
+  padding: 12px 16px;
+  background-color: #fffdfa;
+  color: #2a2626;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.read a:hover {
+  background: #8e3e5a;
+  color: #fffdfa;
+}
+
+.thumbnail {
+  background: #fffdfa;
+}
+
+.video-thumb {
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.video-thumb:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.video-title {
+  margin-bottom: 12px;
+}
+
+.collins-title {
+  font-size: 25px;
+}
+
+/* =========================
+   RESUME PAGE
+========================= */
+
+.education {
+  margin-top: 20px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #d9cfd2;
+  margin: 28px 0 18px 0;
+}
+
+/* =========================
+   CLIPS PAGE
+========================= */
+
+.recents {
+  background: #fffdfa;
+}
+
+.multimedia-title,
+.account-title {
+  font-size: 38px;
+  margin-bottom: 22px;
+}
+
+.left-feature {
+  margin-right: 0;
+}
+
+.left-rec-img,
+.right-rec-img,
+.pub-img {
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.left-rec-img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  display: block;
+}
+
+.right-rec-img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.left-rec-img:hover,
+.right-rec-img:hover {
+  transform: scale(1.03);
+  opacity: 0.88;
+  cursor: pointer;
+}
+
+.rec-text {
+  font-size: 22px;
+  line-height: 1.45;
+  max-width: 420px;
+}
+
+.rec-text1 {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #4d4d4d;
+}
+
+.insta-handle {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+.insta-handle a,
+.insta-handle a:visited {
+  color: #6c6c6c;
+  text-decoration: none;
+}
+
+.insta-handle a:hover {
+  color: #8e3e5a;
+}
+
+.publications {
+  background: #fffdfa;
+  padding-top: 30px;
+}
+
+.pub-btn,
+.pub-btn:visited {
+  display: inline-block;
+  background: #f2e6e8;
+  color: #2a2626;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.pub-btn:hover {
+  background: #8e3e5a;
+  color: #fffdfa;
+}
+
+.HC-title,
+.BE-title {
+  color: #8e3e5a;
+}
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-section {
+  margin-top: 20px;
+  background: #fffdfa;
+}
+
+.bio-title {
+  font-size: 38px;
+}
+
+.headshot {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.bio-text {
+  font-size: 20px;
+  line-height: 1.7;
+  max-width: 700px;
+}
+
+.about-block {
+  margin: 30px 0;
+  padding: 28px;
+  background: #f8eff2;
+  border-radius: 12px;
+}
+
+.about-bottom {
+  margin: 30px 0;
+  padding: 28px;
+  background: #efe9e2;
+  border-radius: 12px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.contact {
+  background: #8e3e5a;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #f2e6e8;
+  font-size: 30px;
+}
+
+.links a {
+  margin: 8px;
+}
+
+.bi {
+  color: #fffdfa;
+  font-size: 26px;
+}
+
+.links a:hover .bi {
+  color: #f2e6e8;
 }
