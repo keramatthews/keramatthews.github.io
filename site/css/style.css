@@ -31,9 +31,7 @@ main .container {
   max-width: 980px;
 }
 
-/* =========================
-   HEADER / NAV
-========================= */
+/* HEADER / NAV */
 
 .header {
   background: #8e3e5a;
@@ -87,9 +85,7 @@ main .container {
   padding: 56px 0;
 }
 
-/* =========================
-   HOME PAGE
-========================= */
+/* HOME PAGE */
 
 .aboutme {
   background: #fffdfa;
@@ -103,7 +99,6 @@ main .container {
 
 .aboutme img {
   border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
 
 .articles {
@@ -128,8 +123,6 @@ main .container {
 .cold-img,
 .memorial-img {
   border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, opacity 0.3s ease;
   margin-bottom: 12px;
 }
 
@@ -160,7 +153,6 @@ main .container {
 }
 
 .video-thumb:hover {
-  opacity: 0.9;
   transform: scale(1.03);
   cursor: pointer;
 }
@@ -173,9 +165,7 @@ main .container {
   font-size: 25px;
 }
 
-/* =========================
-   RESUME PAGE
-========================= */
+/* RESUME PAGE */
 
 .education {
   margin-top: 20px;
@@ -187,9 +177,7 @@ hr {
   margin: 28px 0 18px 0;
 }
 
-/* =========================
-   CLIPS PAGE
-========================= */
+/*CLIPS PAGE */
 
 .recents {
   background: #fffdfa;
@@ -231,8 +219,6 @@ hr {
 .left-rec-img:hover,
 .right-rec-img:hover {
   transform: scale(1.03);
-  opacity: 0.88;
-  cursor: pointer;
 }
 
 .rec-text {
@@ -255,7 +241,7 @@ hr {
 
 .insta-handle a,
 .insta-handle a:visited {
-  color: #6c6c6c;
+  color: #2a2626;
   text-decoration: none;
 }
 
@@ -270,7 +256,6 @@ hr {
 
 .pub-btn,
 .pub-btn:visited {
-  display: inline-block;
   background: #f2e6e8;
   color: #2a2626;
   text-decoration: none;
@@ -290,9 +275,7 @@ hr {
   color: #8e3e5a;
 }
 
-/* =========================
-   ABOUT PAGE
-========================= */
+/*ABOUT PAGE */
 
 .about-section {
   margin-top: 20px;
@@ -309,7 +292,6 @@ hr {
   height: auto;
   display: block;
   border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
 
 .bio-text {
@@ -321,7 +303,7 @@ hr {
 .about-block {
   margin: 30px 0;
   padding: 28px;
-  background: #f8eff2;
+  background: #f2e6e8;
   border-radius: 12px;
 }
 
@@ -332,9 +314,7 @@ hr {
   border-radius: 12px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 .contact {
   background: #8e3e5a;
