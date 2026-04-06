@@ -3,14 +3,8 @@ body {
   font-family: "Red Hat Display", sans-serif;
   background-color: #fffdfa;
   color: #2a2626;
-}
-
-p,
-li {
-  font-family: "Red Hat Display", sans-serif;
   font-size: 18px;
   line-height: 1.65;
-  color: #2a2626;
 }
 
 h2,
@@ -46,20 +40,18 @@ main .container {
 
 .site-title {
   font-family: "Inria Serif", serif;
-  font-size: 26px;
+  font-size: 1.4em;
   color: #f2e6e8;
   margin: 0;
-  font-weight: 400;
   letter-spacing: 0.5px;
 }
 
 .nav-links a {
   margin-left: 24px;
   text-decoration: none;
-  font-family: "Red Hat Display", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 0.8em;
   color: #f2e6e8;
   transition: color 0.3s ease;
 }
@@ -68,20 +60,11 @@ main .container {
   color: #fffdfa;
 }
 
-.home-img,
-.resume-img,
-.clips-img,
-.about-me-img {
+.img-bg {
   background-color: #f2e6e8;
 }
 
-
-.aboutme,
-.articles,
-.thumbnail,
-.recents,
-.publications,
-.about-section {
+.main-sections {
   padding: 56px 0;
 }
 
@@ -92,7 +75,7 @@ main .container {
 }
 
 .intro-text {
-  font-size: 30px;
+  font-size: 1.6em;
   text-align: left;
   line-height: 1.45;
 }
@@ -106,7 +89,7 @@ main .container {
 }
 
 .articles-title {
-  font-size: 42px;
+  font-size: 2.3em;
   margin-bottom: 24px;
 }
 
@@ -115,7 +98,7 @@ main .container {
 }
 
 .articles h3 {
-  font-size: 28px;
+  font-size: 1.6em;
   line-height: 1.22;
 }
 
@@ -133,7 +116,7 @@ main .container {
   color: #2a2626;
   text-decoration: none;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 0.9em;
   margin-top: 8px;
 }
 
@@ -162,7 +145,7 @@ main .container {
 }
 
 .collins-title {
-  font-size: 25px;
+  font-size: 1.39em;
 }
 
 /* RESUME PAGE */
@@ -185,7 +168,7 @@ hr {
 
 .multimedia-title,
 .account-title {
-  font-size: 38px;
+  font-size: 2.1em;
   margin-bottom: 22px;
 }
 
@@ -222,13 +205,13 @@ hr {
 }
 
 .rec-text {
-  font-size: 22px;
+  font-size: 1.2em;
   line-height: 1.45;
   max-width: 420px;
 }
 
 .rec-text1 {
-  font-size: 16px;
+  font-size: 0.9em;
   margin-top: 10px;
   color: #4d4d4d;
 }
@@ -236,7 +219,7 @@ hr {
 .insta-handle {
   text-align: center;
   margin-top: 8px;
-  font-size: 20px;
+  font-size: 1.1em;
 }
 
 .insta-handle a,
@@ -262,7 +245,7 @@ hr {
   padding: 10px 14px;
   border-radius: 6px;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 0.9em;
 }
 
 .pub-btn:hover {
@@ -283,7 +266,7 @@ hr {
 }
 
 .bio-title {
-  font-size: 38px;
+  font-size: 2.1em;
 }
 
 .headshot {
@@ -295,7 +278,7 @@ hr {
 }
 
 .bio-text {
-  font-size: 20px;
+  font-size: 1.1em;
   line-height: 1.7;
   max-width: 700px;
 }
@@ -324,7 +307,7 @@ hr {
 
 .contact h2 {
   color: #f2e6e8;
-  font-size: 30px;
+  font-size: 1.7em;
 }
 
 .links a {
@@ -333,7 +316,7 @@ hr {
 
 .bi {
   color: #fffdfa;
-  font-size: 26px;
+  font-size: 1.4em;
 }
 
 .links a:hover .bi {
