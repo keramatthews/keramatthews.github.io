@@ -112,7 +112,7 @@ main .container {
 .read a {
   display: inline-block;
   padding: 12px 16px;
-  background-color: #fffdfa;
+  background-color: #f2e6e8;
   color: #2a2626;
   text-decoration: none;
   border-radius: 6px;
@@ -122,7 +122,7 @@ main .container {
 
 .read a:hover {
   background: #8e3e5a;
-  color: #fffdfa;
+  color: #f2e6e8;
 }
 
 .thumbnail {
