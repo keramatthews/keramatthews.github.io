@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1080px; font-family: Georgia, 'Liberation Serif', serif; }
+.bg {
+  width: 1080px; min-height: 1350px; background-color: #f3e3d8;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(201,217,174,0.5) 0px, rgba(201,217,174,0.5) 18px, transparent 18px, transparent 36px),
+    repeating-linear-gradient(90deg, rgba(201,217,174,0.5) 0px, rgba(201,217,174,0.5) 18px, transparent 18px, transparent 36px);
+  padding: 60px 70px;
+}
+.banner {
+  background: #f0c9d6; border: 3px solid #b5677f; border-radius: 14px;
+  padding: 34px 50px; text-align: center; margin-bottom: 50px; transform: rotate(-0.6deg);
+}
+.banner h1 { font-size: 54px; font-weight: bold; color: #8c3552; letter-spacing: 0.5px; }
+.card {
+  background: #fbf7f2; border: 2.5px solid #d9a8b8; border-radius: 18px;
+  padding: 40px 44px; margin-bottom: 40px;
+}
+.card h2 { font-size: 36px; font-weight: bold; color: #3c4a2e; text-align: center; margin-bottom: 28px; }
+.row { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.imgslot {
+  width: 220px; height: 320px; border: 2px dashed #a8927e; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  color: #8a7563; font-size: 19px;
+  background-image: repeating-linear-gradient(45deg, #e3d6c8 0px, #e3d6c8 1px, transparent 1px, transparent 9px);
+  flex-shrink: 0;
+}
+.middle { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.ratinglabel { font-size: 21px; color: #7a8567; }
+.stars { font-size: 34px; color: #d9a23c; letter-spacing: 2px; }
+.stars-num { font-size: 20px; color: #a8842c; font-weight: bold; letter-spacing: 0; vertical-align: middle; margin-left: 4px; }
+.badge {
+  width: 124px; height: 124px; border-radius: 50%; background: #e8afc4;
+  border: 3px solid #b5677f; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; margin-top: 6px;
+}
+.badge .label { font-size: 17px; color: #7a2e45; }
+.badge .num { font-size: 32px; font-weight: bold; color: #7a2e45; }
+.swipe { text-align: center; font-style: italic; font-size: 24px; color: #7a8567; margin-top: 10px; }
+.intro-body { text-align: center; font-size: 32px; color: #7a8567; line-height: 1.8; margin-top: 50px; }
+.intro-body .accent { color: #8c3552; font-weight: bold; font-size: 36px; }
+.center-banner-tall { padding: 60px 50px; }
+.bg.intro-bg { display: flex; flex-direction: column; justify-content: center; min-height: 1350px; padding: 60px 90px; }
+</style>
+</head>
+<body>
+<div data-document-role="page" data-label="the rating key"><div class="bg intro-bg">
+  <div class="banner center-banner-tall"><h1>the rating key</h1></div>
+  <div class="intro-body">books are rated <span class='accent'>&#9733; out of 5</span><br><br>adaptations are rated <span class='accent'>out of 10</span><br><br>28 adaptations, ranked + reviewed<br>book won, adaptation won, or tie?</div>
+</div></div><div data-document-role="page" data-label="book won 1"><div class="bg">
+  <div class="banner"><h1>book won</h1></div>
+  
+  <div class="card">
+    <h2>heartstopper <span style='font-size:16px;color:#a8927e;'>(so close)</span></h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span class='stars-num'>5/5</span></div>
+        <div class="badge"><div class="label">show</div><div class="num">9/10</div></div>
+      </div>
+      <div class="imgslot">show poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>the perfect couple</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4/5</span></div>
+        <div class="badge"><div class="label">show</div><div class="num">6.5/10</div></div>
+      </div>
+      <div class="imgslot">show poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="swipe">swipe for more &#8594;</div>
+</div></div><div data-document-role="page" data-label="book won 2"><div class="bg">
+  <div class="banner"><h1>book won</h1></div>
+  
+  <div class="card">
+    <h2>firefly lane</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span class='stars-num'>5/5</span></div>
+        <div class="badge"><div class="label">show</div><div class="num">7.5/10</div></div>
+      </div>
+      <div class="imgslot">show poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>along for the ride</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span class='stars-num'>5/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">8.5/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="swipe">swipe for more &#8594;</div>
+</div></div><div data-document-role="page" data-label="book won 3"><div class="bg">
+  <div class="banner"><h1>book won</h1></div>
+  
+  <div class="card">
+    <h2>the princess diaries</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span class='stars-num'>5/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">9/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>the hate u give</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4.5/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">8.5/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="swipe">swipe for more &#8594;</div>
+</div></div><div data-document-role="page" data-label="book won 4"><div class="bg">
+  <div class="banner"><h1>book won</h1></div>
+  
+  <div class="card">
+    <h2>the school for good and evil</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4.5/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">6.5/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>the wizard of oz</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span class='stars-num'>5/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">8/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="swipe">swipe for more &#8594;</div>
+</div></div><div data-document-role="page" data-label="book won 5"><div class="bg">
+  <div class="banner"><h1>book won</h1></div>
+  
+  <div class="card">
+    <h2>simon vs the homosapiens agenda</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">7.5/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>wonder</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">7.5/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="swipe">swipe for more &#8594;</div>
+</div></div><div data-document-role="page" data-label="book won 6"><div class="bg">
+  <div class="banner"><h1>book won</h1></div>
+  
+  <div class="card">
+    <h2>five feet apart</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>3.75/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">8/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>gone girl</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span class='stars-num'>4.75/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">9/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="swipe">swipe for more &#8594;</div>
+</div></div><div data-document-role="page" data-label="adaptation won 1"><div class="bg">
+  <div class="banner"><h1>the adaptation won</h1></div>
+  
+  <div class="card">
+    <h2>pretty little liars</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4/5</span></div>
+        <div class="badge"><div class="label">show</div><div class="num">8.5/10</div></div>
+      </div>
+      <div class="imgslot">show poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>anne of green gables</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4.25/5</span></div>
+        <div class="badge"><div class="label">show</div><div class="num">9.5/10</div></div>
+      </div>
+      <div class="imgslot">show poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="swipe">swipe for more &#8594;</div>
+</div></div><div data-document-role="page" data-label="adaptation won 2"><div class="bg">
+  <div class="banner"><h1>the adaptation won</h1></div>
+  
+  <div class="card">
+    <h2>the summer i turned pretty</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9734;&#9734; <span class='stars-num'>3.5/5</span></div>
+        <div class="badge"><div class="label">show</div><div class="num">8.5/10</div></div>
+      </div>
+      <div class="imgslot">show poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>to all the boys i've loved before</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>3.75/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">10/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="swipe">swipe for more &#8594;</div>
+</div></div><div data-document-role="page" data-label="adaptation won 3"><div class="bg">
+  <div class="banner"><h1>the adaptation won</h1></div>
+  
+  <div class="card">
+    <h2>little women (2019)</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">10/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>pride and prejudice</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">9/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="swipe">swipe for more &#8594;</div>
+</div></div><div data-document-role="page" data-label="adaptation won 4"><div class="bg">
+  <div class="banner"><h1>the adaptation won</h1></div>
+  
+  <div class="card">
+    <h2>red, white & royal blue</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">8.5/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>where the crawdads sing</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>3.75/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">9/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="swipe">swipe for more &#8594;</div>
+</div></div><div data-document-role="page" data-label="tie 1"><div class="bg">
+  <div class="banner"><h1>tie</h1></div>
+  
+  <div class="card">
+    <h2>off campus <span style='font-size:16px;color:#a8927e;'>(show unfinished)</span></h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4.25/5</span></div>
+        <div class="badge"><div class="label">show</div><div class="num">8/10</div></div>
+      </div>
+      <div class="imgslot">show poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>a series of unfortunate events</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4.5/5</span></div>
+        <div class="badge"><div class="label">show</div><div class="num">9/10</div></div>
+      </div>
+      <div class="imgslot">show poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="swipe">swipe for more &#8594;</div>
+</div></div><div data-document-role="page" data-label="tie 2"><div class="bg">
+  <div class="banner"><h1>tie</h1></div>
+  
+  <div class="card">
+    <h2>heated rivalry</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4/5</span></div>
+        <div class="badge"><div class="label">show</div><div class="num">8/10</div></div>
+      </div>
+      <div class="imgslot">show poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>divergent</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>3.75/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">7.5/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="swipe">swipe for more &#8594;</div>
+</div></div><div data-document-role="page" data-label="tie 3"><div class="bg">
+  <div class="banner"><h1>tie</h1></div>
+  
+  <div class="card">
+    <h2>hunger games <span style='font-size:16px;color:#a8927e;'>(slight edge to movie)</span></h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4.25/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">9/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>project hail mary</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">8/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="swipe">swipe for more &#8594;</div>
+</div></div><div data-document-role="page" data-label="tie 4"><div class="bg">
+  <div class="banner"><h1>tie</h1></div>
+  
+  <div class="card">
+    <h2>the fault in our stars</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4.25/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">8.5/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>people we meet on vacation</h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">8/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="swipe">swipe for more &#8594;</div>
+</div></div><div data-document-role="page" data-label="most controversial"><div class="bg">
+  <div class="banner"><h1>most controversial</h1></div>
+  
+  <div class="card">
+    <h2>heartstopper <span style='font-size:16px;color:#a8927e;'>(nearly a tie)</span></h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span class='stars-num'>5/5</span></div>
+        <div class="badge"><div class="label">show</div><div class="num">9/10</div></div>
+      </div>
+      <div class="imgslot">show poster<br>here</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>little women (2019) <span style='font-size:16px;color:#a8927e;'>(perfect score)</span></h2>
+    <div class="row">
+      <div class="imgslot">book cover<br>here</div>
+      <div class="middle">
+        <div class="ratinglabel">book</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span class='stars-num'>4/5</span></div>
+        <div class="badge"><div class="label">movie</div><div class="num">10/10</div></div>
+      </div>
+      <div class="imgslot">movie poster<br>here</div>
+    </div>
+  </div>
+
+  
+</div></div><div data-document-role="page" data-label="your turn"><div class="bg intro-bg">
+  <div class="banner center-banner-tall"><h1>your turn</h1></div>
+  <div class="intro-body">which verdict do you<br>disagree with most?<br><br><span class='accent'>tell me in the comments</span></div>
+</div></div><div data-document-role="page" data-label="thanks for reading"><div class="bg intro-bg">
+  <div class="banner center-banner-tall"><h1>thanks for reading</h1></div>
+  <div class="intro-body">follow for more bookish content<br><br><span class='accent'>save this post</span><br>for your next book vs. movie debate</div>
+</div></div>
+</body>
+</html>
